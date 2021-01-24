@@ -898,4 +898,9 @@ notifications:
     rooms:
       - secure: H2MYCea3VVSxnCLWV/O30q/HpwvSyMpBRR6Q6YUFau6DzU0cnWzuGuVPB2aDUAuCIadYK4eSv+lUMkAzB2OAHyiBcxJMJY/CRRuvAspvmWbatAIrdhtRR4ZRiBIHttNHKjODMmYvhOmHAK6n+P3Mo3D6Xtdopsma7j+7frzGylPTBWmbJrEUfOUB3IsOWSfp0rg7SCUJ7Jx/SiGu7bvisX5vdHshAYQJ2LTiO3nGqRpcd19LC1Z0Lehp+mkMUaIS/EamIgLmdHCVq2/Dj0nLva3b3Y/zk9rWpSa+ACF/6z8najTTpDAboOhWIZOB0czd4kS+OGPvYNxrvGgJme+nSgnbA2sXBWdLW8EsCY4NnLYNmWaP7XrnASKIjlXjsCz1YAMUbMnaB7eKuEsKYtljvCfgMIan559QjKTK5NPqRsXQafpuU4xA6JgYJA6ycrvdkpUekUtGFRleh3Sfxd9OsJDGGKLZycdRxUAoZPpW2rXmbO3bEiCiyo6z0gn6YVtJcWkhrlGtqRnTdD2rsIHNPnOnmDAZzhmlora6f6Tbf+THfjzTR0Ay8McBr2UudQ8nEwPfWQAZTTuRjgWTleF6RD+PZXw6vqGvTG2HG1teoEqNdO4Vb2THVEFRBwBdPod6vJTK78TyffMA6GCz1fe4TXcHUpyRGF9wAFb6NWXTNRc=
 ```
-- Оповещение настроить не удалось :(. По какой то причине не приходят оповещения даже на другой workspace слака.
+- Чтобы заработала интеграция Slack + Travis надо добавить
+```
+    on_success: always
+    on_failure: always
+```
+почему то дефолтные значения оказались очень важны!
